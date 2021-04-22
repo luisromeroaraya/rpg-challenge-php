@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2vh;
+}
+
+h1, h2, h3, h4, h5, p, label, button {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.5vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+.btn {
+    width: auto;
+    z-index: 5;
+}
+
+.form-control {
+    width: auto;
+    margin: auto;
+}
+
+.btn:hover, .btn:focus {
+    background: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#headerLogo {
+    height: auto;
+    max-width: 150px;
+}
+
+#versusLogo {
+    height: auto;
+    max-width: 150px;
+    position: absolute;
+    margin: auto;
+    top: calc(40vh - 60px);
+    left: calc(50% - 75px);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 576px) {
+    #headerLogo {
+        height: auto;
+        max-width: 100px;
+    }
+
+    #versusLogo {
+        max-width: 100px;
+        left: calc(50vw - 50px);
+    }
+
+    select {
+        width: 100%;
+    }
+}  
+
+#heroPhoto, #enemyPhoto {
+    max-height: 400px;
+}
+
+.heroWins, .enemyWins {
+    display: none;
+}
+
+#heroWinsPhoto, #enemyWinsPhoto {
+    max-height: 30vh;
+    margin: auto;
+}
+
+#fightHero, #fightEnemy {
+    margin: auto;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#logContainer {
+    max-height: 9vh;
+    overflow-y: scroll;
+}
+
+/* HOME BACKGROUND */
+.home {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url(assets/background-modal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4); /* BLACK WITH OPACITY */
+    left: 0;
+    top: 0;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+  
+/* MODAL CONTENT */
+.home-content {
+    background: rgba(0,0,0,0.5);
+    border: 10px solid white;
+}
